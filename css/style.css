@@ -142,7 +142,20 @@ header {
 }
 
 .page-hero {
-  background: var(--color);
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-color: var(--color);
+
   text-align: center;
 }
 
@@ -172,11 +185,29 @@ header {
   cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--color-button);
+}
+
 /* Benefits at work */
 
 .benefits-list {
   display: flex;
   gap: 24px;
+}
+
+.bnf-icon-container {
+  display: flex;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  margin: 0 auto;
+  width: 64px;
 }
 
 .work-title {
@@ -227,7 +258,7 @@ header {
   background: #f4f4fd;
 }
 
-.page-team .list {
+.page-team-list {
   display: flex;
   text-align: center;
   gap: 24px;
@@ -274,9 +305,79 @@ header {
 }
 
 .team-text {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+/* social networks our team*/
+
+.team-icon-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-icon-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: var(--main-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background: var(--color-button);
+}
+
+.button-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* Customers */
+
+.page-customers {
+  padding-top: 130px;
+}
+
+.customers-container {
+  text-align: center;
+}
+
+.customers-title {
+  margin-bottom: 72px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-link {
+  display: flex;
+  width: 168px;
+  height: 88px;
+
+  border: 1px solid #8e8f99;
+  fill: #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--color-button);
+  fill: var(--color-button);
 }
 
 /* Footer */
@@ -286,6 +387,14 @@ header {
   padding-bottom: 100px;
 
   background-color: var(--color);
+}
+
+.footer-position {
+  display: flex;
+}
+
+.footer-container {
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -310,6 +419,44 @@ header {
 
 .white-logo {
   color: #f4f4fd;
+}
+
+/* footer social icons */
+
+.footer-social-title {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background: #31d0aa;
+}
+
+.footer-social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 /* Portfolio */
@@ -348,6 +495,8 @@ header {
   background: var(--color-button);
   color: var(--primary-white);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-list {
@@ -360,6 +509,11 @@ header {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.project-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-img {
