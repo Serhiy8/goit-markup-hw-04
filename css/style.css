@@ -39,6 +39,8 @@ ul {
 }
 
 .section {
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -426,6 +428,11 @@ ul {
 }
 
 /* footer social icons */
+
+.page-footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .footer-social-title {
   margin-bottom: 16px;
