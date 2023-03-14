@@ -23,10 +23,6 @@ ul {
   padding: 0;
 }
 
-header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
 .list {
   list-style: none;
 }
@@ -48,6 +44,15 @@ header {
 }
 
 /* header */
+
+.header-line {
+  margin: 0 auto;
+
+  border-bottom: 1px solid #e7e9fc;
+  max-width: 1440px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
 .container-nav {
   display: flex;
@@ -143,7 +148,6 @@ header {
 
 .page-hero {
   max-width: 1440px;
-  height: 600px;
   margin: 0 auto;
 
   background-size: cover;
